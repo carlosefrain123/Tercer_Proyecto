@@ -8,10 +8,11 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./css/estilos.css">
 </head>
 
 <body>
-  <div class="container mt-5">
+  <div class="container fondo mt-5">
     <h1 class="text-center">CRUD con PHP, PDO, AJAX y DATATABLES.JS</h1>
     <div class="row mb-2">
       <div class="col-12 text-center">
