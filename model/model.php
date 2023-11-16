@@ -25,7 +25,7 @@ class model{
         $stament->bindParam(":telefono", $telefono);
         $stament->bindParam(":correo", $correo);
         $stament->bindParam(":direccion", $direccion);
-        return ($stament->execute()) ? $this->PDO->lastInsertId() : false;
+        return ($stament->execute()) ? $id : false;
     }
 }
 ?>
