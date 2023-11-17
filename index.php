@@ -38,7 +38,8 @@ $dato = $obj->list();
                                 <a href="#edit_<?php echo $row[0]; ?>" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#edit_<?php echo $row[0]; ?>">
                                     Editar
                                 </a>
-
+                                <!--modal-->
+                                
                             </td>
                         </tr>
                     <?php endforeach ?>
