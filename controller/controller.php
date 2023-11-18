@@ -21,5 +21,9 @@ class controller{
         $idEdite=$this->model->editar($idPersona,$nombre, $telefono, $correo, $direccion);
         return($idEdite!=false)?header('Location: index.php'):false;
     }
+    public function delete($idPersona){
+        $idDelete=$this->model->eliminar($idPersona);
+        return($idDelete!=false)?header('Location: index.php'):false;
+    }
 }
 ?>

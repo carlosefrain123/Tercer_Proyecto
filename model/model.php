@@ -33,5 +33,10 @@ class model{
         $stament->bindParam(":direccion", $direccion);
         return ($stament->execute()) ? $idPersona : false;
     }
+    public function eliminar($idPersona){
+        $stament=$this->PDO->prepare("DELETE FROM usuarios WHERE idPersona=:idPersona");
+        $stament->bindParam(":idPersona", $idPersona);
+        return ($stament->execute()) ? true : false;
+    }
 }
 ?>

@@ -2,7 +2,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Agregar Usuario</h5>
+                <h5 class="modal-title text-center">Agregar Usuario</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -25,8 +25,8 @@
                             <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Enter your address">
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="submit" class="btn btn-primary" name="add">Save changes</button>
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i class="bi bi-file-x-fill"></i> Cerrar</button>
+                            <button type="submit" class="btn btn-primary" name="add"><i class="bi bi-save"></i> Guardar</button>
                         </div>
                     </form>
                 </div>

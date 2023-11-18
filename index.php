@@ -8,11 +8,11 @@ $dato = $obj->list();
 
 
 <div class="container">
-    <h1 class="page-header text-center">Agenda de contacto Personal</h1>
+    <h1 class="page-header text-center">Agenda de Contacto Personal</h1>
     <a href="#addNew" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#addNew"><i class="bi bi-plus-lg"></i>Nuevo</a>
     <div class="col-sm-12">
-        <table class="table table-bordered table-striped">
-            <thead>
+        <table id="datos_usuario" class="table table-bordered table-striped" >
+            <thead class="text-center">
                 <tr>
                     <th>Id</th>
                     <th>Nombre de contacto</th>
@@ -22,7 +22,7 @@ $dato = $obj->list();
                     <th>Acciones</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody class="text-center">
                 <?php if ($dato) : ?>
                     <?php foreach ($dato as $row) : ?>
                         <tr>
@@ -33,13 +33,15 @@ $dato = $obj->list();
                             <td><?= $row[4] ?></td>
                             <td>
                                 <a href="visualizar.php?idPersona=<?= $row[0] ?>" type="button" class="btn btn-success">
-                                    Visalizar
+                                    <i class="bi bi-eye-fill"></i> Visualizar
                                 </a>
                                 <a href="#edit_<?php echo $row[0]; ?>" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#edit_<?php echo $row[0]; ?>">
-                                    Editar
+                                    <i class="bi bi-pencil-square"></i> Editar
                                 </a>
                                 <!--modal-->
-                                
+                                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#delete<?= $row[0] ?>">
+                                    <i class="bi bi-trash-fill"></i> Eliminar
+                                </button>
                             </td>
                         </tr>
                     <?php endforeach ?>
@@ -51,5 +53,6 @@ $dato = $obj->list();
 </div>
 
 <?php include("addModal.php"); ?>
-<?php include("editModal.php") ?>
+<?php include("editModal.php"); ?>
+<?php include("deleteModal.php"); ?>
 <?php require_once("C:/xampp/htdocs/proyectc/view/footer.php"); ?>
